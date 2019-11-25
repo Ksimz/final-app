@@ -1,0 +1,29 @@
+{
+  "name": "final-app",
+  "version": "1.0.0",
+  "description": "ecg data visualiser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o build/app.js"
+  },
+  "keywords": [
+    "ecg",
+    "visualiser"
+  ],
+  "author": "kudzai simau",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "fusioncharts": "^3.14.1",
+    "mqtt": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-fusioncharts": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babelify": "^8.0.0",
+    "browserify-css": "^0.15.0"
+  }
+}
